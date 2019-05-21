@@ -89,20 +89,20 @@ class _InputPageState extends State<InputPage> {
                         'cm',
                         style: kLabelTextStyle,
                       ),
-                      Slider(
-                        value: height.toDouble(),
-                        min: 120,
-                        max: 220,
-                        activeColor: Color(0xFFEB1555),
-                        inactiveColor: Color(0xFF8D8E98),
-                        onChanged: (double newValue) {
-                          setState(() {
-                            height = newValue.toInt();
-                          });
-                        },
-                      ),
                     ],
-                  )
+                  ),
+                  Slider(
+                    value: height.toDouble(),
+                    min: 120,
+                    max: 220,
+                    activeColor: Color(0xFFEB1555),
+                    inactiveColor: Color(0xFF8D8E98),
+                    onChanged: (double newValue) {
+                      setState(() {
+                        height = newValue.toInt();
+                      });
+                    },
+                  ),
                 ],
               ),
               color: kActiveCardColor,
